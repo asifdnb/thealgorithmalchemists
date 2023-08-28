@@ -1,0 +1,31 @@
+[12:05] Bøen, Øystein
+
+// What is the quarterly real GDP growth rate of the US over time?
+
+SELECT * FROM "ECONOMY"."BEANIPA" WHERE "Table Name" = 'Percent Change From Preceding Period In Real Gross Domestic Product' AND "Indicator Name" = 'Gross domestic product (GDP)' AND "Frequency" = 'Q' ORDER BY "Date";
+
+ 
+
+// What is the US unemployment rate over time?
+
+SELECT * FROM "ECONOMY"."BLSUSLFSCPS2019" WHERE "Series Name"= 'Unemployment Rate - (Seas)' AND "Frequency" = 'M' ORDER BY "Date";
+
+ 
+
+// What is the US inflation over time?
+
+SELECT * FROM "ECONOMY"."BEANIPA" WHERE "Table Name" = 'Price Indexes For Personal Consumption Expenditures By Major Type Of Product' AND "Indicator Name" = 'Personal consumption expenditures (PCE)' AND "Frequency" = 'A' ORDER BY "Date";
+
+ 
+
+// What is the EUR/USD exchange rate?
+
+SELECT * FROM "ECONOMY"."EXRATESCC2018" WHERE "Currency" = 'EUR/USD' AND "Indicator Name" = 'Close' AND "Frequency" = 'D' AND "Date" > '2000-01-01' ORDER BY "Date";
+
+ 
+
+// What is the US manufacturing PMI over time?
+
+SELECT * FROM "ECONOMY"."ISMMNF2017" WHERE "Indicator Name" = 'PMI' ORDER BY "Date";
+
+ 
