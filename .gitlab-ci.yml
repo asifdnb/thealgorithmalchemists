@@ -6,4 +6,4 @@ stages:
 execute_sql:
   image: snowsql:latest # Use a Docker image with SnowSQL installed
   script:
-    - snowsql -c bw93352.eu-north-1.aws -f path/to/your/query.sql
+    - snowsql -c bw93352.eu-north-1.aws -f sql1.sql
