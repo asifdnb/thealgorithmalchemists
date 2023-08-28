@@ -1,0 +1,9 @@
+stages:
+  - execute_sql
+
+ 
+
+execute_sql:
+  image: snowsql:latest # Use a Docker image with SnowSQL installed
+  script:
+    - snowsql -c my_snowflake_connection -f path/to/your/query.sql
