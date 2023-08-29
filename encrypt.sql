@@ -1,8 +1,3 @@
-
 UPDATE OURDB.PUBLIC.V1
-SET C_NAME_encypted = ENCRYPT(C_NAME, 'encryption_key');
-
-UPDATE
-set
-From 
-where
+SET C_ADDRESS = HASH(C_ADDRESS, 'SHA256')::STRING
+WHERE C_NAME = 'Customer#006141538';
