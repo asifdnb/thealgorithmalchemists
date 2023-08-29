@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+    - name: src
+      database: OURDB
+      schema: PUBLIC
+      tables:
+        - name: V1
